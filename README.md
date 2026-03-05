@@ -12,9 +12,10 @@ Markdown → styled HTML → PDF.
 
 ## Install
 
-`WeasyPrint` relies on native system libraries and works best with stable Python versions.
+We rely on `WeasyPrint` for HTML → PDF, which itself depends on some native system libraries.
 
-You have to make sure you have **Python ≥ 3.12** installed.
+If you run into import errors, make sure you are using **Python ≥ 3.12** and that the
+required system dependencies for WeasyPrint are installed.
 
 Then install project dependencies:
 ```python
