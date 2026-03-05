@@ -10,23 +10,42 @@ It uses:
 
 Markdown → styled HTML → PDF.
 
+## Install
+
+`WeasyPrint` relies on native system libraries and works best with stable Python versions.
+
+You have to make sure you have **Python ≥ 3.12** installed.
+
+Then install project dependencies:
+```python
+uv sync
+```
 
 ## Usage
-
-### Run:
-
+### Run directly with Python:
 ```python
-python main.py input.md
+python3 -m mdtopdf.cli input.md
 
 # results to:
-input.pdf
+input.pdf  # in the same directory.
+```
+# or install it in editable mode
+```python
+uv pip install -e .
 
-in the same directory.
+# then run:
+mdtopdf input.md
+
+# same results:
+input.pdf  # in the same directory.
 ```
 ### Options
 check the available options with:
 
 ```python
 
-python3 main.py --help
+python3 -m mdtopdf.cli --help
+
+# or if you installed in editable mode
+mdtopdf --help
 ```
