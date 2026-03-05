@@ -1,5 +1,5 @@
 [project]
-name = "md2pdf"
+name = "mdtopdf"
 version = "0.1.0"
 description = "turn markdown file into a pdf"
 readme = "README.md"
@@ -10,3 +10,5 @@ dependencies = [
     "typer>=0.24.1",
     "weasyprint>=68.1",
 ]
+[project.scripts]
+mdtopdf = "mdtopdf.cli:app"
