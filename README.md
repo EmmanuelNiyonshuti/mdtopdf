@@ -9,3 +9,24 @@ It uses:
 - `Typer` for commandline arguments and options
 
 Markdown → styled HTML → PDF.
+
+
+## Usage
+
+### Run:
+
+```python
+python main.py input.md
+
+# results to:
+input.pdf
+
+in the same directory.
+```
+### Options
+check the available options with:
+
+```python
+
+python3 main.py --help
+```
