@@ -5,7 +5,6 @@ description = "turn markdown file into a pdf"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
-    "justhtml>=1.7.0",
     "markdown>=3.10.2",
     "typer>=0.24.1",
     "weasyprint>=68.1",
