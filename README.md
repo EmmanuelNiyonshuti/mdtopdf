@@ -36,7 +36,7 @@ python3 -m mdtopdf.cli input.md
 # results to:
 input.pdf  # in the same directory.
 ```
-# or install it in editable mode
+### or install it in editable mode
 ```python
 uv pip install -e .
 
