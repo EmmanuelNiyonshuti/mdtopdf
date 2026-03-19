@@ -85,7 +85,7 @@ def main(
             traceback.print_exc()
         raise typer.Exit(code=1)
 
-    typer.secho(f"✓ PDF written to {output_path}", fg=typer.colors.GREEN)
+    typer.secho(f"PDF written to {output_path}", fg=typer.colors.YELLOW)
 
     if open_after:
         typer.launch(str(output_path), locate=True)
